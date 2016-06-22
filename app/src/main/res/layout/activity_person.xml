@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.project.ui.PersonActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/primaryBlue"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <ImageView
+                android:id="@+id/image_duigou"
+                android:layout_width="50dp"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:paddingLeft="8dp"
+                android:paddingTop="15dp"
+                android:visibility="gone"
+                android:paddingBottom="18dp"
+                android:src="@drawable/ic_meau_duigou"
+                android:paddingRight="15dp"
+                />
+            <ImageView
+                android:id="@+id/image_add"
+                android:layout_width="50dp"
+                android:scaleType="fitXY"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:paddingRight="10dp"
+                android:src="@drawable/ic_meau_add"
+                />
+            </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:keepScreenOn="true"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="210dp"
+        android:foregroundGravity="right"
+        android:scaleType="fitXY"
+        app:backgroundTint="#8fa62b"
+        app:fabSize="mini"
+        android:src="@drawable/camera_in"
+    />
+    <include layout="@layout/content_person" />
+</android.support.design.widget.CoordinatorLayout>

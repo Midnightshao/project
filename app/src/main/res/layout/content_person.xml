@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout_person"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.project.ui.PersonActivity"
+    tools:showIn="@layout/activity_person"
+    >
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_height="180dp">
+
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="fitXY"
+            android:background="#e8e8e8"
+            android:paddingTop="15dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/imageView2"
+            android:paddingRight="100dp"
+            android:paddingLeft="100dp"
+            android:src="@drawable/ic_person" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/swipeRefreshLayout"
+        android:id="@+id/relativeLayout"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_person_name"
+            android:scaleType="fitXY"
+            android:padding="5dp"
+            android:id="@+id/imageView3"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="38dp" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="姓名"
+            android:ems="10"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#d4d4d4"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="13dp"
+            android:id="@+id/editText_name"
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_toRightOf="@+id/imageView3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageView4"
+            android:src="@drawable/ic_clock"
+            android:layout_below="@+id/imageView3"
+            android:layout_alignRight="@+id/imageView3"
+            android:layout_alignEnd="@+id/imageView3" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_clock"
+            android:hint="学习代码时间"
+            android:clickable="false"
+            android:inputType="number"
+            android:backgroundTint="#d4d4d4"
+            android:layout_marginRight="20dp"
+            android:layout_alignBottom="@+id/imageView4"
+            android:layout_alignLeft="@+id/editText_name"
+            android:layout_alignStart="@+id/editText_name"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView5"
+            android:layout_marginLeft="-10dp"
+            android:paddingLeft="-8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_message"
+            android:layout_below="@+id/imageView4"
+            android:layout_toLeftOf="@+id/editText_address"
+            android:layout_toStartOf="@+id/editText_address" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_address"
+            android:hint="邮箱"
+            android:backgroundTint="#d4d4d4"
+            android:layout_alignTop="@+id/imageView5"
+            android:layout_alignLeft="@+id/editText_clock"
+            android:layout_alignStart="@+id/editText_clock"
+            android:layout_alignRight="@+id/editText_clock"
+            android:layout_alignEnd="@+id/editText_clock" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:id="@+id/imageView6"
+            android:src="@drawable/ic_postive"
+            android:layout_below="@+id/editText_address"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_postive"
+            android:hint="地理位置"
+            android:backgroundTint="#d4d4d4"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/editText_address"
+            android:layout_alignLeft="@+id/editText_address"
+            android:layout_alignStart="@+id/editText_address"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/github1"
+            android:src="@drawable/ic_github"
+            android:layout_below="@+id/editText_postive"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_github"
+            android:hint="github"
+            android:backgroundTint="#d4d4d4"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/editText_postive"
+            android:layout_alignLeft="@+id/editText_address"
+            android:layout_alignStart="@+id/editText_address"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

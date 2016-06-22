@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+>
+<RelativeLayout
+    android:background="#fff"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="22dp"
+    android:paddingRight="22dp"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="今天是个好天气"
+        android:gravity="left"
+        android:id="@+id/textView_title1"
+        android:textColor="#000"
+        android:layout_marginTop="16dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView_te"
+        android:layout_toRightOf="@+id/imageView_te" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="jintianfjajwfooawjfiwaioefj,jintianfjajwfooawjfiwaioefj,jintianfjajwfooawjfiwaioefj"
+        android:id="@+id/textView_content1"
+        android:layout_below="@+id/textView_title1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <View
+        android:layout_width="match_parent"
+        android:background="#d8d8d8"
+        android:layout_height="1dp"
+        android:id="@+id/view"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/textView_content1"
+       ></View>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:text="关注"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_shape"
+        android:id="@+id/button3"
+        android:textColor="#fff"
+        android:layout_below="@+id/view"
+        android:layout_alignRight="@+id/view"
+        android:layout_alignEnd="@+id/view" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView_te"
+        android:scaleType="fitXY"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="18dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
+</android.support.v7.widget.CardView>

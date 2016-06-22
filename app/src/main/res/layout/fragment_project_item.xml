@@ -1,0 +1,97 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="3dp"
+    app:cardBackgroundColor="#fff"
+    android:layout_height="match_parent"
+    android:layout_width="wrap_content">
+
+<RelativeLayout
+    android:background="@drawable/ic_select"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+    <ImageView
+        android:layout_marginTop="0dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="16dp"
+        android:background="@drawable/shape_oval"
+        android:scaleType="fitXY"
+        android:id="@+id/imageView_header1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="title_jintianshighao"
+        android:textStyle="bold"
+        android:id="@+id/title_project"
+        android:layout_alignTop="@+id/imageView_header1"
+        android:layout_toRightOf="@+id/imageView_header1"
+        android:layout_toEndOf="@+id/imageView_header1"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:id="@+id/textView_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:maxLines="2"
+        android:text="jsdajfklsjadlkfjlk;askldfjjflajfiwajfiaewjfiaejflz/sdvjfoiweaoifjoeawi;fjjeiwafjoiaewjfojo;awejflkdajsklfjkladsjfjoiwajfioeawjfjweaiojfisdjfjdsizljfklzdjfjoiwejfjjewjfiw;aoejifjoweaijfio;weajfo;jweajf"
+        android:layout_below="@+id/title_project"
+        android:layout_toRightOf="@+id/imageView_header1"
+        android:layout_toEndOf="@+id/imageView_header1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textView"
+        android:textSize="12dp"
+        android:layout_marginLeft="16dp"
+        android:text="hhahahjfadjlsf"
+        android:layout_alignTop="@+id/imageView8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_pinglun"
+        android:src="@drawable/ic_pinglun"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toLeftOf="@+id/textView4"
+        android:layout_toStartOf="@+id/textView4" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_good"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/imageView8"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/textView3"
+        android:layout_toStartOf="@+id/textView3"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="1"
+        android:id="@+id/textView3"
+        android:layout_marginRight="46dp"
+        android:layout_marginEnd="46dp"
+        android:layout_alignTop="@+id/imageView8"
+        android:layout_toLeftOf="@+id/imageView_pinglun"
+        android:layout_toStartOf="@+id/imageView_pinglun" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="1"
+        android:layout_marginLeft="2dp"
+        android:id="@+id/textView4"
+        android:layout_marginRight="23dp"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_marginEnd="23dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+</RelativeLayout>
+</android.support.v7.widget.CardView>  

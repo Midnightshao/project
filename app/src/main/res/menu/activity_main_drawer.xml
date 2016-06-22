@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:title="头像"
+            android:icon="@drawable/ic_menu_camera"
+            ></item>
+        <item
+            android:id="@+id/touxiang"
+            android:icon="@mipmap/touxiang"
+            android:title="个人信息" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="发表消息" />
+    </group>
+
+    <item android:title="交流">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="分享" />
+        </menu>
+    </item>
+
+</menu>
